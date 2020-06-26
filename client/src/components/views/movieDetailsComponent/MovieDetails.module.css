@@ -1,0 +1,80 @@
+  .content {
+      position: fixed;
+      z-index: 500;
+      background-color: cadetblue;
+      width: 70%;
+      box-shadow: 0px 0px 8px 3px black;
+      padding: 16px;
+      right: 20%;
+      top: 20%;
+      box-sizing: border-box;
+      transition: all 0.3s ease-out;
+  } 
+
+  .Backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left:0;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+  .movieDetails .content{
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 25px;
+    color: black;
+  }
+  
+  .movieDetails .content h2{
+    font-size: 28px;
+    font-weight: 600;
+  }   
+  
+  .movieDetails .content .rating{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .movieDetails .content .overview{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 15px 30px;
+    font-size: 22px;
+    text-align: justify;
+  }
+  
+  .movieDetails .content .overview img {
+    max-width: 300px;
+    margin: 15px 15px;
+  }
+  
+  .movieDetails .content .overview p{
+    flex: 1 1 50%;
+    margin: 15px;
+  }
+  
+  .movieDetails .content .close{
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    background: black;
+    color: white;;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+  }
+  
+  .movieDetails .content .close:hover{
+    background: #646464;
+    color: black;
+  }

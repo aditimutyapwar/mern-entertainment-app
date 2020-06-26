@@ -1,0 +1,52 @@
+
+body {
+  font-family: 'open-sans', sans-serif;
+  background-color: rgb(206, 206, 211);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.app {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input.error {
+  border-color: red;
+}
+
+.slider{
+  height: 550px !important;
+}
+
+.input-feedback {
+  color: red;
+  height: 5px;
+  margin-top: -12px;
+}
+
+.App .header{
+  padding: 20px 15px;
+  background-color: black;
+}
+
+.App .header h1{
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+.App .main{
+  width: 100%;
+  width: 1280px;
+  margin: 0 auto;
+  background: rgb(221, 221, 221);
+}
+

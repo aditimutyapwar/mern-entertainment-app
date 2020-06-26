@@ -1,0 +1,20 @@
+.ant-btn.ant-btn-primary{
+    color: black;
+    background-color: cadetblue;
+}
+
+.ant-btn.ant-btn-primary:hover{
+    color: cadetblue;
+    background-color: black;
+}
+
+.login-form-forgot, .register{
+    color: cadetblue;
+}
+.login-form-forgot, .register:hover{
+    color: black;
+}
+
+.ant-form-item label{
+    float: left
+}

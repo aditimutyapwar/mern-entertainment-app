@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+.carousel {
+  width: 100%;
+  background: cadetblue;
+  margin: 0 auto;
+}
+
+.sliderContent {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+}
+
+.sliderContent .inner {
+  padding: 0 70px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sliderContent .inner h1 {
+  font-weight: 900;
+  margin: 0 auto;
+  max-width: 840px;
+  color: white;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.sliderContent .inner p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 20px auto 30px;
+  max-width: 640px;
+}

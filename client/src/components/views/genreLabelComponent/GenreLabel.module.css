@@ -1,0 +1,19 @@
+.genreContainer{
+    padding: 20px 60px 20px 60px;
+}
+
+.label{
+    display: inline-block;
+    margin: 10px;   
+    border-radius: 15px;
+    padding:10px;
+    cursor: pointer;
+    background: cadetblue;
+    border: 1px solid black;
+}
+
+.label:hover {
+    background: rgb(94, 92, 92);
+    color: black;
+    box-shadow: 0px 0px 2px 3px cadetblue;
+  }
