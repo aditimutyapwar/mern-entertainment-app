@@ -10,6 +10,7 @@
     cursor: pointer;
     background: cadetblue;
     border: 1px solid black;
+    color: black;
 }
 
 .label:hover {

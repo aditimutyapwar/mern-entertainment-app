@@ -9,7 +9,7 @@ const Favorite = ({ userFrom, movieId, movieInfo }) => {
     const variable = {
         userFrom: userFrom,
         movieId: movieId,
-        movieTitle: movieInfo.title 
+        movieTitle: movieInfo.title
     };
 
     useEffect(() => {
@@ -57,11 +57,10 @@ const Favorite = ({ userFrom, movieId, movieInfo }) => {
     }
  
     return(
-        <div>
-            <button 
-                onClick={onclickFavorite}
-                className={Favorited ? 'press' : ''}>{Favorited ? 'Remove from Favorite' : 'Add to Favorite'}</button>
-        </div>
+        <div 
+            onClick={onclickFavorite}
+            className={Favorited ? 'add press' : 'add'}></div>
+    
     )
 }
 

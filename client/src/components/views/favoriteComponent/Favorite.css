@@ -1,0 +1,15 @@
+div.add{
+    padding: 20px;
+}
+div.add::before {
+    font-family: fontAwesome;
+    content: "\f02e";
+    color: cadetblue;
+    background: black;
+    padding: 10px 15px;
+  }
+
+  div.add.press::before{
+      color: red;
+      padding: 10px 15px
+  }

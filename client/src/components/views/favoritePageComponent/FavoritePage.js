@@ -1,26 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 import './FavoritePage.module.css';
 
 const FavoritePage = () => {
     const [FavoritedMovies, setFavoritedMovies] = useState([]);
-   const variable = {
-       userFrom: localStorage.getItem('userId')
-   }
-    useEffect(() => {
-        fetchFavMovies();
-    }, [])
-
-    const fetchFavMovies = () => {
+    
+    const variable = {
+        userFrom: localStorage.getItem('userId')
+    }
+    const fetchFavMovies = useCallback(() => {
         axios.post('api/favorite/getFavoriteMovies', variable)
         .then(response => {
             if(response.data.success) {
                 setFavoritedMovies(response.data.favorites)
             }else {
                 alert('failed to fav list')
-            }
+            } 
         })
-    }
+    }, [variable])
+
+    useEffect(() => {
+        fetchFavMovies();
+    }, [fetchFavMovies])
 
     const removeMovie = (movieId) => {
         const variable = {
@@ -64,4 +65,4 @@ const FavoritePage = () => {
     )
 }
 
-export default FavoritePage;
+export default FavoritePage; 
